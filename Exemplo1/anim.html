@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(88, 88, 88);
+        }
+
+        .container {
+            width: 600px;
+            height: 600px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .bola {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 0, 0);
+            border-radius: 100%;
+        }
+
+        .bola:hover {
+            background-color: aqua;
+            transform: translateY(-300px);
+
+        }
+
+
+        /* Transition 
+
+            transition-delay: 0.1s;
+            transition-duration: 1s;
+            transition-property:all;
+            transition-timing-function:ease-in;
+
+        */
+
+        /* Animation - Bouncing 
+
+            animation-name: bounce;
+            animation-duration: 0.8s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function:cubic-bezier(0,1,0);
+
+        @keyframes bounce {
+            0% {
+                height: 100px;
+            }
+
+            20% {
+                width: 150px;
+                height: 200px;
+            }
+
+            
+
+
+            100% {
+                height: 200px;
+                width: 200px;
+                transform: translateY(-300px);
+
+            }
+
+        }
+
+        */
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="bola"></div>
+    </div>
+
+
+</body>
+</html>
