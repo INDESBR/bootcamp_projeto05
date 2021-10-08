@@ -39,7 +39,7 @@
             height: 280px;
             width: 250px;
             background-color: blueviolet;
-            border-radius: 100% 100% 150px 150px;
+            border-radius: 50% 50% 30% 30% / 60% 60% 30% 30%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -55,14 +55,23 @@
         }
 
         .m-olho-container {
-           
-            height: 60px;
-            width: 100%;
-            transform: translateY(70px);
+            height: 20px;
+            width: 50px;
+            transform: translateY(40px);
             display: flex;
-            justify-content: space-evenly;
-            padding: 0 40px;
+            justify-content: space-between;
+         
         }
+
+        .m-olho-container:hover ~ .m-boca {
+            height: 20px;
+            width: 40px;
+            border-top: solid 2px rgb(0, 0, 0);
+            border-bottom: none;
+            border-radius: 100%;
+            transform: translateY(50px);
+           
+       }
 
         .m-olho {
             width: 10px;
@@ -79,6 +88,8 @@
             border-radius: 100%;
             transform: translateY(5px);
         }
+
+       
 
         .m-boca {
             
