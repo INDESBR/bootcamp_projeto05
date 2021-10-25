@@ -31,6 +31,11 @@
             height: 200px;
             background-color: rgb(255, 0, 0);
             border-radius: 100%;
+            animation-name: bounce;
+            animation-duration: 0.8s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function:cubic-bezier(0,1,0);
         }
 
         .bola:hover {
@@ -40,23 +45,7 @@
         }
 
 
-        /* Transition 
-
-            transition-delay: 0.1s;
-            transition-duration: 1s;
-            transition-property:all;
-            transition-timing-function:ease-in;
-
-        */
-
-        /* Animation - Bouncing 
-
-            animation-name: bounce;
-            animation-duration: 0.8s;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            animation-timing-function:cubic-bezier(0,1,0);
-
+        
         @keyframes bounce {
             0% {
                 height: 100px;
